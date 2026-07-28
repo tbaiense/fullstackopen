@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Revisando HTML forms</title>
+        <style>
+            label
+            {
+                display: block;
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="user-form" action="/user" method="post">
+            <label for="name">Name:
+                <input id="name" type="text" name="user_name" placeholder="João Alberto..." />
+            </label>
+            <label for="email">Email:
+                <input id="email" type="email" name="user_email" value="seu@email.com" />
+            </label>
+            <button type="submit">Enviar dado</button>
+        </form>
+    </body>
+</html>
